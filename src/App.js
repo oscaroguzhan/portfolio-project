@@ -1,7 +1,10 @@
+import NavBar from "./Components/NavBar";
+import Sidebar from "./Components/Sidebar";
+
 function App() {
   return (
     <div className="App">
-      <h1>styled components</h1>
+      <Sidebar />
     </div>
   );
 }

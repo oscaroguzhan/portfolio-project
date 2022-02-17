@@ -18,10 +18,20 @@ const GlobalStyle = createGlobalStyle`
         --font-dark-second-color:#151515;
         --font-light-color:#a4acc4;
         --white:#fff;
+        --sidebar-bg-color:#191D2B;
     }
     body {
         font-family: 'Poppins', sans-serif;
         background-color: var(--bg-dark-color);
+        color:(--white);
+    }
+
+    a {
+        color:var(--white);
+        font-size:1.3rem;
+    }
+    p{
+        color:var(--white);
     }
 `;
 
