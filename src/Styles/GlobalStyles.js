@@ -33,6 +33,10 @@ const GlobalStyle = createGlobalStyle`
     p{
         color:var(--white);
     }
+    h4 {
+        color:var(--white);
+        padding-bottom: .4rem;
+    }
 `;
 
 export default GlobalStyle;

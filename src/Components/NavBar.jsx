@@ -29,7 +29,10 @@ const NavBar = () => {
         </li>
       </ul>
       <footer className="footer">
-        <img src={logo} alt="logo picute" />
+        <a href="https://www.codeguruozzy.com/">
+          <img src={logo} alt="logo picute" />
+        </a>
+
         <p>@2022 Portfolio Website</p>
       </footer>
     </StyledNavbar>

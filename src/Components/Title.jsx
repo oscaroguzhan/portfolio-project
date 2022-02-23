@@ -5,8 +5,10 @@ const Title = ({ title, span }) => {
   return (
     <StyledTitle>
       <h1>
-        {title} <span>{span} </span>
+        {title}
+        <span>{span} </span>
       </h1>
+      
     </StyledTitle>
   );
 };

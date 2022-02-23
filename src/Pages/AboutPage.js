@@ -1,14 +1,18 @@
 import React from "react";
-import Title from "../Components/Title";
-import Layout from "../Styles/Layout";
-import StyledAboutPage from "../Styles/StyledAboutPage";
 
+import Title from "../Components/Title";
+import {Layout} from "../Styles/Layout";
+
+import me from "../assets/me.jpeg";
+import ImageSection from "../Components/ImageSection";
 const AboutPage = () => {
   return (
     <Layout>
-      <StyledAboutPage>
-        <Title title={"About me"} span={"Ozzy"} />
-      </StyledAboutPage>
+      <>
+        {/* reusable component */}
+        <Title title={"About me"} span={"Who Am I"} />
+        <ImageSection />
+      </>
     </Layout>
   );
 };

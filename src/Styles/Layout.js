@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-const Layout = styled.div`
-  min-height: 100vh;
+export const Layout = styled.div`
   padding: 5rem;
-  background-color:white;
 `;
-export default Layout;
+export const InnerLayout = styled.div`
+  padding: 3rem 0;
+`;
+
