@@ -4,6 +4,6 @@ export const Layout = styled.div`
   padding: 5rem;
 `;
 export const InnerLayout = styled.div`
-  padding: 3rem 0;
+  padding: 4rem 0;
 `;
 
