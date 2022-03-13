@@ -2,9 +2,9 @@ import React from "react";
 import StyledSidebar from "../Styles/StyledSidebar";
 import NavBar from "./NavBar";
 
-const Sidebar = () => {
+const Sidebar = ({hamburgerMenu}) => {
   return (
-    <StyledSidebar>
+    <StyledSidebar className={hamburgerMenu ? "toogleHamburger" : ""} >
       <NavBar />
     </StyledSidebar>
   );

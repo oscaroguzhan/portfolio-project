@@ -22,8 +22,8 @@ margin-top: 1rem;
   justify-content: center;
   align-items: center;
   flex-wrap:wrap;
-  
   margin: 3rem auto;
+  
 `;
 const StyledButton = styled.button`
 border:none;
@@ -34,7 +34,10 @@ color:var(--white);
 padding: 0.8rem 1.5rem;
 font-size:1.2rem;
 border-radius:10px;
+margin-bottom: 1rem;
+width:12rem;
 cursor: pointer;
+
 transition: all .5 ease-in-out;
 &:not(:last-child) {
     margin-right:1rem;
@@ -42,5 +45,6 @@ transition: all .5 ease-in-out;
 &:hover {
     background-color:var(--border-color);
 }
+
 `;
 export default Button;

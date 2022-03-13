@@ -29,7 +29,11 @@ const StyledSkills = styled.section`
       display:grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 10px;
+      @media all and (max-width:700px) {
+        grid-template-columns: 1fr;
+      }
   }
+  
 `;
 
 export default Skills;

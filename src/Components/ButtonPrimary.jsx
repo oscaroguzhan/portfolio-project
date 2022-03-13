@@ -17,6 +17,13 @@ const StyledButtonPrimary = styled.a`
         opacity: 0.8 ;
         transition: all 0.5 ease-in;
     }
+    @media all and (max-width: 920px) {
+      display:flex;
+      width: 20rem;
+      margin: 2rem auto;
+      align-items:center;
+      justify-content:center; 
+    }
     
 
 `;

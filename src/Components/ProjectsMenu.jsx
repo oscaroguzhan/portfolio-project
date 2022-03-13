@@ -35,6 +35,24 @@ const StyledProjectsMenu = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
+  @media all and (max-width: 520px){
+        grid-template-columns: 1fr;
+        text-align:center;
+        margin-bottom:1rem;
+    }
+    @media all and (max-width:1420px) {
+      grid-template-columns:repeat(3,1fr);
+      text-align:center;
+    }
+
+    @media all and (max-width:1200px) {
+      grid-template-columns:repeat(2,1fr);
+      text-align:center;
+    }
+    @media all and (max-width:680px) {
+      grid-template-columns:1fr;
+      text-align:center;
+    }
   .grid-item {
     width: 100%;
 
@@ -42,6 +60,7 @@ const StyledProjectsMenu = styled.div`
       display: block;
       position: relative;
     }
+    
     img {
       object-fit: cover;
       height: 40vh;
@@ -72,19 +91,30 @@ const StyledProjectsMenu = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        @media all and (max-width: 520px) {
+          left:40%;
+        }
         li {
           background-color: var(--secondary-color);
           padding: 0.8rem;
           border-radius: 50%;
+          @media all and (max-width: 520px) {
+          padding:0.5rem;
+          margin-left: 4rem;
+        }
           a {
-            display:flex;
-            text-align:center;
+            display: flex;
+            text-align: center;
           }
         }
         svg {
           font-size: 2.5rem;
           color: var(--white);
           cursor: pointer;
+          @media all and (max-width: 520px) {
+          font-size: 2rem;
+          text-align:center;
+        }
         }
       }
       &::before {
@@ -95,6 +125,10 @@ const StyledProjectsMenu = styled.div`
         transform-origin: left;
         transform: scale(1);
         transition: all 0.5s ease-in-out;
+        @media all and (max-width: 520px) {
+          width: 40%;
+          margin-left: 4rem;
+    }
       }
     }
   }

@@ -26,6 +26,18 @@ const GlobalStyle = createGlobalStyle`
         color:(--white);
     }
 
+
+    body::-webkit-scrollbar {
+        width:10px;
+        background-color:var(--border-color);
+        border-radius:10px;  
+    }
+    body::-webkit-scrollbar-thumb {
+        
+        background-color:var(--secondary-color);
+        border-radius:10px;  
+    }
+    
     a {
         color:var(--white);
         font-size:1.3rem;
@@ -37,6 +49,30 @@ const GlobalStyle = createGlobalStyle`
         color:var(--white);
         padding-bottom: .4rem;
     }
+
+    // MEDIA QUERIES
+    .hamburger-menu {
+        position:absolute;
+        top:5%;
+        right:7%;
+        z-index:99;
+        color:var(--primary-color) !important;
+        border-radius:10px;
+        svg {
+            color:var(--primary-color);
+            font-size:3rem;
+        }
+    }
+    .toogleHamburger {
+        transform:translateX(0);
+        z-index: 5;
+    }
+    @media screen and (min-width: 1120px) {
+    .hamburger-menu {
+        display:none;
+    }
+  }
+    
 `;
 
 export default GlobalStyle;

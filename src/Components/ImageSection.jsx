@@ -9,15 +9,17 @@ const ImageSection = () => {
         <img src={profilPict} alt="" />
       </div>
       <div className="right">
-        <div className="right-subtitle">
-          <h3> Front End Developer </h3>
-        </div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium, repellendus similique. Velit provident harum odio
-            reiciendis, quia minima voluptate{" "}
-          </p>
+        <div className="right-text">
+          <div className="right-subtitle">
+            <h3> Front End Developer </h3>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium, repellendus similique. Velit provident harum odio
+              reiciendis, quia minima voluptate{" "}
+            </p>
+          </div>
         </div>
         <div className="info-container">
           <ul className="info-left">
@@ -35,7 +37,7 @@ const ImageSection = () => {
             <li>3 wonderful kids</li>
           </ul>
         </div>
-        <ButtonPrimary title={'Download Cover letter'}/>
+        <ButtonPrimary title={"Download Cover letter"} className="btn-cv" />
       </div>
     </StyledImageSect>
   );
@@ -45,48 +47,108 @@ const StyledImageSect = styled.div`
   margin-top: 6rem;
   color: var(--white);
   display: flex;
- gap:10px;
+
+  gap: 10px;
   .left {
     width: 100%;
-    margin-top:1rem;
-    flex: 1;
-    height:60vh;
+    margin-top: 1rem;
+    min-height: 30rem;
+
     img {
       width: 100%;
       border-radius: 10px;
-      height:100%;
-      object-fit:cover;
+      height: auto;
+      object-fit: cover;
     }
   }
   .right {
-    flex: 2;
+    flex: 1;
     .right-subtitle {
       text-align: center;
       font-size: 2.2rem;
       color: var(--primary-color);
-      
-      
     }
     p {
-      text-align:center;
+      text-align: center;
       margin: 2rem auto;
       font-size: 1.3rem;
-      
-      
     }
 
     .info-container {
-        display:flex;
-        justify-content:space-evenly;
-        align-items:center;
-        line-height:2.5rem;
-        margin-top:3rem;
-        font-size: 1.3rem;
-        
-        
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      line-height: 2.5rem;
+      margin-top: 3rem;
+      font-size: 1.3rem;
     }
-    
   }
-  
+  // MEDIA QUERIES
+  @media all and (max-width: 560px) {
+    .right {
+      .info-container {
+        font-size: 0.9rem;
+      }
+      a {
+        padding: 0.8rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  @media all and (min-width: 561px) {
+    .right {
+      a {
+        margin-left: 4rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+    .left {
+      width: 100%;
+      margin: 4rem auto;
+      img {
+        object-fit: cover;
+        width: 90%;
+      }
+    }
+    .right {
+      .right-subtitle {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      a {
+        margin-right: 0;
+      }
+    }
+  }
+  @media all and (min-width: 1025px) {
+    .left {
+      flex: 1;
+      height: auto;
+    }
+    .right {
+      margin: 1rem;
+      .right-text {
+        flex: 2;
+      }
+      a {
+        margin-right: 0;
+      }
+    }
+  }
+  @media all and (min-width: 1120) {
+    .left {
+    }
+    .right {
+      margin: 1rem;
+      a {
+        font-size: 0.9rem;
+        margin-right: 0;
+      }
+    }
+  }
 `;
 export default ImageSection;

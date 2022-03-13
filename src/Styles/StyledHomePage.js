@@ -53,6 +53,7 @@ const StyledHomePage = styled.div`
     }
   }
   @media screen and (min-width: 920px) {
+    width:calc(100%-100px);
     h2 {
       font-size: 2.3rem;
     }
@@ -78,6 +79,18 @@ const StyledHomePage = styled.div`
     }
     .personal-info span .typical-div {
       font-size: 1.7rem;
+    }
+  }
+
+  @media screen and (max-width: 1120px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.6rem;
     }
   }
 `;

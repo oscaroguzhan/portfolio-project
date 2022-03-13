@@ -6,10 +6,21 @@ import AboutPage from "./Pages/AboutPage";
 import ResumePage from "./Pages/ResumePage";
 import ProjectsPage from "./Pages/ProjectsPage";
 import ContactPage from "./Pages/ContactPage";
+import MenuIcon from "@material-ui/icons/Menu";
+import { IconButton } from "@material-ui/core";
+import { useState } from "react";
+
 function App() {
+  const [hamburgerMenu, SetHamburgerMenu] = useState(false);
   return (
     <div className="App">
-      <Sidebar />
+      <Sidebar hamburgerMenu={hamburgerMenu}/>
+
+      <div className="hamburger-menu">
+        <IconButton onClick={() => SetHamburgerMenu(!hamburgerMenu)}>
+          <MenuIcon />
+        </IconButton>
+      </div>
       <StyledMainContent>
         <Switch>
           <Route path="/" exact>

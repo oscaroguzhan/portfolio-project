@@ -46,5 +46,24 @@ const StyledTitle = styled.div`
       z-index:-10;
     }
   }
+  
+  @media all and (max-width: 920px) {
+    h1 {
+      font-size: 3.5rem;
+
+      span {
+        margin-top: 1.5rem;
+        font-size: 4.5rem;
+      }
+    }
+  }
+  @media all and (max-width:560px) {
+    h1 {
+      font-size: 2.5rem;
+      span {
+        font-size: 3.5rem;
+      }
+    }
+  }
 `;
 export default StyledTitle;
