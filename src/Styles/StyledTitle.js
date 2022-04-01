@@ -37,7 +37,7 @@ const StyledTitle = styled.div`
 
     }
     span {
-      color:rgba(25,29,43,.90);
+      color:rgba(25,29,43,.90)!important;
       font-weight:900;
       font-size:5.5rem;
       position:absolute;

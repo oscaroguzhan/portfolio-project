@@ -9,16 +9,14 @@ const ResumeContent = () => {
         year={"2021 - present"}
         title={"Front End Developer"}
         subtitle={"EC-Utbildning"}
-        text={
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugiat!"
-        }
+        text={"Front end developer student looking for new opportunities"}
       />
       <ResumeElement
         year={"2011 - 2015"}
-        title={"Master education in Molecular Biology"}
+        title={"Master in Molecular Biology"}
         subtitle={"Lund University"}
         text={
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fugiat!"
+          "Realized my passion at IT and programming"
         }
       />
     </StyledResumeContent>
@@ -26,9 +24,8 @@ const ResumeContent = () => {
 };
 
 const StyledResumeContent = styled.div`
-margin: 10px;
+  margin: 10px;
 
-border-left: 2px solid var(--border-color);
-
+  border-left: 2px solid var(--border-color);
 `;
 export default ResumeContent;

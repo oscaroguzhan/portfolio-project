@@ -9,12 +9,15 @@ import ContactPage from "./Pages/ContactPage";
 import MenuIcon from "@material-ui/icons/Menu";
 import { IconButton } from "@material-ui/core";
 import { useState } from "react";
-
+import styled from "styled-components";
+import { useSelector } from "react-redux";
 function App() {
   const [hamburgerMenu, SetHamburgerMenu] = useState(false);
+  const { lightMode } = useSelector((state) => state.toggle);
+  console.log(lightMode);
   return (
-    <div className="App">
-      <Sidebar hamburgerMenu={hamburgerMenu}/>
+    <StyledApp>
+      <Sidebar hamburgerMenu={hamburgerMenu} />
 
       <div className="hamburger-menu">
         <IconButton onClick={() => SetHamburgerMenu(!hamburgerMenu)}>
@@ -43,8 +46,11 @@ function App() {
           </Route>
         </Switch>
       </StyledMainContent>
-    </div>
+    </StyledApp>
   );
 }
+const StyledApp = styled.div`
+
+`;
 
 export default App;

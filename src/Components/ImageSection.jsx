@@ -1,4 +1,5 @@
 import React from "react";
+
 import styled from "styled-components";
 import profilPict from "../assets/me3-modified.jpeg";
 import ButtonPrimary from "./ButtonPrimary";
@@ -15,9 +16,8 @@ const ImageSection = () => {
           </div>
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Accusantium, repellendus similique. Velit provident harum odio
-              reiciendis, quia minima voluptate{" "}
+              Ambitious, curious and social front-end developer who is eager and
+              ready to learn much more...
             </p>
           </div>
         </div>
@@ -37,7 +37,12 @@ const ImageSection = () => {
             <li>3 wonderful kids</li>
           </ul>
         </div>
-        <ButtonPrimary title={"Download Cover letter"} className="btn-cv" />
+
+        <ButtonPrimary
+          title={"Download CV"}
+          className="btn-cv"
+         
+        />
       </div>
     </StyledImageSect>
   );
