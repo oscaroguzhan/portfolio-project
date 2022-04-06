@@ -28,5 +28,20 @@ const StyledButtonPrimary = styled.a`
     align-items: center;
     justify-content: center;
   }
+  @media all and (max-width: 600px) {
+    display: flex;
+    width: 16rem;
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  @media all and (max-width: 480px) {
+    display: flex;
+    width: 15rem;
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 export default ButtonPrimary;
