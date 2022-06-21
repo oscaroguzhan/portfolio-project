@@ -5,7 +5,9 @@ import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
 import project6 from "../assets/project6.png";
 import project7 from "../assets/project7.png";
-
+import project8 from "../assets/booking-app-pic3.png";
+import project9 from "../assets/booking-app-pic2.png";
+import project10 from "../assets/booking-app-pic1.png";
 const projects = [
   {
     id: 1,
@@ -63,6 +65,31 @@ const projects = [
     title: "Create react app",
     text: "React basics hooks, props",
   },
+  {
+    id: 8,
+    category: "MERN",
+    image: project8,
+    link_github: "https://github.com/oscaroguzhan/mern-booking-app-frontend.git",
+    title: "Create mern-stack booking app (client site)",
+    text: "React-Router, Styled-components",
+  },
+  {
+    id: 9,
+    category: "React",
+    image: project9,
+    link_github: "https://github.com/oscaroguzhan/mern-booking-app-frontend.git",
+    title: "Create mern-stack booking app (client site)",
+    text: "React-Router, Styled-components",
+  },
+  {
+    id: 10,
+    category: "React-Router",
+    image: project10,
+    link_github: "https://github.com/oscaroguzhan/mern-booking-app-frontend.git",
+    title: "Create mern-stack booking app (client site)",
+    text: "React-Router, Styled-components",
+  },
+  
 ];
 
 export default projects;
