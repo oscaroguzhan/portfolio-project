@@ -3,7 +3,6 @@ import React from "react";
 import Title from "../Components/Title";
 import {Layout} from "../Styles/Layout";
 
-import me from "../assets/me.jpeg";
 import ImageSection from "../Components/ImageSection";
 const AboutPage = () => {
   return (
